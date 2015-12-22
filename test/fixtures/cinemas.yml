@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  site_id: MyString
+  site_name: MyString
+  site_address_1: MyString
+  site_address_2: MyString
+  site_address_3: MyString
+  site_address_4: MyString
+  site_postcode: MyString
+  site_telephone: MyString
+  site_longitude: MyString
+  site_latitude: MyString
+
+two:
+  site_id: MyString
+  site_name: MyString
+  site_address_1: MyString
+  site_address_2: MyString
+  site_address_3: MyString
+  site_address_4: MyString
+  site_postcode: MyString
+  site_telephone: MyString
+  site_longitude: MyString
+  site_latitude: MyString

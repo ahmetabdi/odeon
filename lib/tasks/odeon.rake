@@ -43,6 +43,12 @@ namespace :odeon do
 
       film['sites'].each do |site|
         CinemaFilm.find_or_create_by(cinema_id: Cinema.where(site_id: site).first.id, film_id: film_id.id)
+
+        puts film['title']
+
+        film_times = Curl.get('https://api.odeon.co.uk/android-2.1/api/film-times', s: site, m: film['filmMasterId'])
+        data = JSON.parse(film_times.body_str)["data"]
+        puts data
       end
     end
   end

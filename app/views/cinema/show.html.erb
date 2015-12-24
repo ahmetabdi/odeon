@@ -1,0 +1,5 @@
+<h1>Choose a Film</h1>
+
+<% @cinema.films.each do |film| %>
+  <%= link_to film.title, cinema_film_path(@cinema.id, film.id) %>
+<% end %>

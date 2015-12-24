@@ -14,3 +14,19 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(function() {
+  // $(".cinema_step").click(function() {
+  //   var cinema_id = $(".cinema_select").val();
+  //   if (cinema_id) {
+  //     window.location.href = '/cinema/' + cinema_id
+  //   }
+  // });
+
+  // $(".film_step").click(function() {
+  //   var film_id = $(".cinema_select").val();
+  //   if (film_id) {
+  //     window.location.href = '/cinema/' + film_id
+  //   }
+  // });
+});

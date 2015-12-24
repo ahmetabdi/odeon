@@ -1,1 +1,8 @@
-Hello
+<h1>Choose a Cinema</h1>
+
+<%#= select_tag(:cinema_id, options_for_select(Cinema.all.map {|x| [x.site_name, x.id]}), size: 25, class: 'cinema_select') %>
+<%#= submit_tag 'Go', class: 'cinema_step' %>
+
+<% Cinema.all.each do |cinema| %>
+  <%= link_to cinema.site_name, cinema_path(cinema.id) %>
+<% end %>
